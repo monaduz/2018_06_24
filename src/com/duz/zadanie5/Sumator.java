@@ -18,24 +18,26 @@ public class Sumator {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File ("/home/mona/IdeaProjects/2018_06_24/src/com/duz/zadanie5/inlet.txt");
         Scanner scanner = new Scanner (file);
-        int tableSize = 6;
-        int[] inlet = new int[tableSize];
-        int[] outlet = new int[tableSize];
-
-        for (int i = 0; i <inlet.length ; i++) {
-            inlet[i] =  scanner.nextInt();
-        }
-
         int sum=0;
-        for (int i = 0; i < outlet.length; i++) {
-            sum+=inlet[i];
-            outlet[i]=sum;
-            System.out.println(outlet[i]);
-
+        while (scanner.hasNext()){
+            sum+=scanner.nextInt();
+            System.out.println(sum);
         }
 
-
+//
+//        int tableSize = 6;
+//        int[] inlet = new int[tableSize];
+//        int[] outlet = new int[tableSize];
+//
+//        for (int i = 0; i <inlet.length ; i++) {
+//            inlet[i] =  scanner.nextInt();
+//        }
+//
+//        int sum=0;
+//        for (int i = 0; i < outlet.length; i++) {
+//            sum+=inlet[i];
+//            outlet[i]=sum;
+//            System.out.println(outlet[i]);
+//        }
     }
-
-
 }
